@@ -1,0 +1,190 @@
+/*
+ * @author: Simran Singh ( simran.singh2198@gmail.com )
+ */
+
+html,
+body {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+}
+
+
+/* rules for desktop or bigger screens here */
+
+.side-bar {
+    position: fixed;
+    width: 18rem;
+    height: 100%;
+    background-color: #252525;
+    border-right: 0.2rem solid rgba(220, 74, 79, 0.8);
+    padding: 0;
+}
+
+.side-bar-light {
+    background-color: #eee;
+    border-right: none;
+}
+
+.side-bar .list-container {
+    padding-top: 4rem;
+}
+
+.side-bar .list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.side-bar .list-container ul li,
+.side-bar .navbar-brand {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+.side-bar-light .list-container ul li,
+.side-bar-light .navbar-brand {
+    border-bottom: 1px solid #bbb;
+}
+
+.side-bar .navbar-brand {
+    padding: 1.3rem;
+    padding-right: 1.5rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background: #222;
+}
+
+.side-bar-light .navbar-brand {
+    background: #ddd;
+    color: #111;
+}
+
+.side-bar .navbar {
+    padding: 0;
+    border: none;
+}
+
+.side-bar .list-container ul li a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.side-bar-light .list-container ul li a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.side-bar .list-container ul li .active {
+    border-left: 0.3rem solid rgba(220, 74, 79, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.side-bar-light .list-container ul li .active {
+    border-left: 0.3rem solid rgba(220, 74, 79, 0.9);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.side-bar .navIcon {
+    padding: 0.4rem;
+}
+
+.side-bar .list-container ul li a:hover {
+    background: rgba(220, 74, 79, 0.5);
+}
+
+.side-bar-light .list-container ul li a:hover {
+    background: rgba(220, 74, 79, 0.9);
+    color: #fff;
+}
+
+.bodyContent {
+    /*same as side-bar width*/
+    margin-left: 18rem;
+}
+
+@media screen and (max-width: 991px) {
+    /* small screen rules */
+    html {
+        font-size: 12px;
+    }
+    .side-bar {
+        top: 0;
+        right: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        z-index: 10;
+    }
+    .side-bar .list-container {
+        /*now list container acts as side-bar so we apply same css rules as side bar here*/
+        position: fixed;
+        width: 18rem;
+        height: 100%;
+        top: 4rem;
+        left: 0;
+        background-color: #252525;
+        border-right: 0.2rem solid rgba(220, 74, 79, 0.5);
+        padding: 0;
+        margin-left: -18rem;
+        transition: all 0.3s ease;
+    }
+    .side-bar-light .list-container {
+        background-color: #eee;
+        border-right: none;
+    }
+    .side-bar .navbar {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 4rem;
+        display: flex;
+        padding: 0.7rem 1rem;
+        background: #252525;
+    }
+    .side-bar-light .navbar {
+        background: #ddd;
+    }
+    .side-bar-light #toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .side-bar .navbar-brand {
+        display: inline-block;
+        padding: 0.25rem;
+        padding-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+        width: auto;
+        background: none;
+        border: none;
+    }
+    .bodyContent {
+        margin-top: 4rem;
+        /*same as side-bar width*/
+        margin-left: 0;
+        transition: all 0.3s ease;
+    }
+    .list-toggler {
+        /* important tag is needed here else properties wont overwrite*/
+        margin-left: 0!important;
+    }
+}
