@@ -1,6 +1,6 @@
 ## b4-sidebar
 
-<img src="https://xxxzeus.github.io/mockup.gif" width="600"/>
+<div style="text-align:center"><img src="https://xxxzeus.github.io/mockup.gif" width="600"/></div>
 
 
 This is a responsive side-bar template for **Boostrap 4** with slide in/out interactive animations. It comes in two themes which are [dark]( https://github.com/xxxZeus/b4-sidebar/blob/master/index.html) and [light]( https://github.com/xxxZeus/b4-sidebar/blob/master/light.html). Dark theme is the default theme.
