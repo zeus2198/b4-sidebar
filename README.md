@@ -15,29 +15,30 @@ Zoom in to view how it would look in mobile and try toggling the sidebar!
 # General Structure
 
 The code structure for sidebar is as follows :
-
-    <div class="side-bar">
-        <!-- add class "side-bar-light" here for light version -->
-        <nav class="navbar navbar-inverse">
-    
-            <!-- toogle button -->
-            <button class="navbar-toggler hidden-lg-up" type="button" id="toggler" aria-controls="list-container" aria-label="Toggle side-bar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- brand name goes below -->
-            <a class="navbar-brand" href="#">Brand</a>
-            <div class="list-container">
-                <ul>
-                    <!-- list of side bar elements goes here, example : -->
-                    <li><a href="#" class="active"><span class="navIcon"><i class="fa fa-sticky-note"></i></span>&nbsp;&nbsp;Active Link</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="bodyContent">
-        <!-- Body content here -->
-    </div>
+```html
+<div class="side-bar">
+	<!-- add class "side-bar-light" here for light version -->
+	<nav class="navbar navbar-inverse">
+		
+		<!-- toogle button -->
+		<button class="navbar-toggler hidden-lg-up" type="button" id="toggler" aria-controls="list-container" aria-label="Toggle side-bar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<!-- brand name goes below -->
+		<a class="navbar-brand" href="#">Brand</a>
+		<div class="list-container">
+			<ul>
+				<!-- list of side bar elements goes here, example : -->
+				<li><a href="#" class="active"><span class="navIcon"><i class="fa fa-sticky-note"></i></span>&nbsp;&nbsp;Active Link</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="bodyContent">
+	<!-- Body content here -->
+</div>
+ ```
 
 As mentioned in comments to switch to lighter theme of side-bar just add the class `side-bar-light` where class `side-bar` is being used. *(Note that you need to add this class for light version **not replace it)** *
 
