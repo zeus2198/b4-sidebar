@@ -1,9 +1,9 @@
 ## b4-sidebar
 <p align="center">
-<img src=" https://xxxzeus.github.io/b4-sdiebar/mocukup.gif" width="200"/>
+<img src=" https://xxxzeus.github.io/b4-sidebar/mocukup.gif" width="200"/>
 </p>
 
-This is a responsive side-bar template for **Boostrap 4** with slide in/out interactive animations. It comes in two themes which are [dark]( https://xxxzeus.github.io/b4-sidebar/) and [light]( https://xxxzeus.github.io/b4-sidebar/light.html). Dark theme is the default theme.
+This is a responsive side-bar template for **Boostrap 4** with slide in/out interactive animations. It comes in two themes which are [dark]( https://github.com/xxxZeus/b4-sidebar/blob/master/index.html) and [light]( https://github.com/xxxZeus/b4-sidebar/blob/master/light.html). Dark theme is the default theme.
 
 The side-bar hides in smaller screen and can be toggled with help of button in navbar. You do not need to make navbar separately, a part of side-bar it self is navbar which appears on smaller screen. Just follow the code pattern described below and you will be good to go. Also look at [index.html](https://github.com/xxzeus/b4-sidebar/blob/master/index.html) and [light.html](https://github.com/xxzeus/b4-sidebar/blob/master/light.html) of proper examples.
 
