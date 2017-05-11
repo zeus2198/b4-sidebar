@@ -40,7 +40,7 @@ The code structure for sidebar is as follows :
 </div>
  ```
 
-As mentioned in comments to switch to lighter theme of side-bar just add the class `side-bar-light` where class `side-bar` is being used. *(Note that you need to add this class for light version **not replace it)** *
+As mentioned in comments to switch to lighter theme of side-bar just add the class `side-bar-light` where class `side-bar` is being used. (Note that you need to add this class for light version **not replace it)**
 
 # License 
 This project is licensed under the terms of the [MIT license](https://en.wikipedia.org/wiki/MIT_License)
